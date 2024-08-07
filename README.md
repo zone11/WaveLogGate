@@ -4,6 +4,18 @@
 * [FLRig](http://www.w1hkj.com/) properly SetUp to your TRX (if you want to use the CAT-Feature. It's optional!)
 * WSJT-X (if you want to use the automatic logging from WSJT-X/Z/Y / FLDigi / Tool which produces UDP-Log-Packets)
 * WaveLog-Account on any WaveLog instance
+* HTTPS (SSL) has to be enabled for Wavelog to use WLGate
+
+#### WARNING // IMPORTANT! (When using AppleSilicon Mac)
+If you use a newer mac (with M1,M2,M3, etc.) apple changed their policy for unsigned Apps.
+There's a workaround available, but you need the Terminal aka Shell for that.
+Instructions:
+1. Download Binary/DMG
+2. Copy Binary/DMG to Application-Folder
+3. Launch Terminal.app
+4. Type in the following:
+   - `xattr -d com.apple.quarantine /Applications/WaveLogGate.app`
+   - Launch the Application (should launch now)
 
 #### Setup:
 1. Download Binary
@@ -29,3 +41,6 @@ Enable "Secondary UDP Server" like shown in the picture. Do NOT set "UDP Server"
 * When clicking the loupe at Live-QSO/Post-QSO Wavelog will automaticly lookup the Spot behind the QRG (if there's a spot)
 
 Enjoy
+
+#### Contributing
+Contribution is welcome. PRs will only be accepted against the Dev-Branch.
